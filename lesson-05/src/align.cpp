@@ -14,11 +14,13 @@ struct S1
     double m2;
 };
 
-class NonPOD : S1
+class NonPOD
 {
-    virtual void foo()
+    NonPOD()
     {
+        m1 = 100;
     }
+    int m1;
 };
 
 int main()
